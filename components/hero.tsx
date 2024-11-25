@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from 'next/link'
 
 export function Hero() {
   return (
@@ -11,8 +12,8 @@ export function Hero() {
           <p className="mt-6 max-w-[700px] text-xl text-muted-foreground mb-12">
           AI development platform designed to empower developers, businesses, and creators to build, deploy, and manage intelligent agents with ease.
           </p>
-          <Button size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
-            Get Started
+          <Button asChild size="lg" className="text-lg px-8 py-6 bg-primary text-primary-foreground hover:bg-primary/90">
+            <Link href="/signup">Get Started</Link>
           </Button>
         </div>
       </div>

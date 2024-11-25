@@ -54,8 +54,8 @@ export function Navbar() {
 
           <div className="hidden md:flex items-center space-x-4">
             <ThemeToggle />
-            <Button variant="outline" size="sm">
-              Sign Up
+            <Button asChild variant="outline" size="sm">
+            <Link href="/signup">Sign Up</Link>
             </Button>
           </div>
 
